@@ -7,7 +7,6 @@
 __author__ = "Gautam Sharma"
 
 import pickle
-
 import torch
 import torch.utils.data as Data
 from ImitationLearning.Plot import Plot

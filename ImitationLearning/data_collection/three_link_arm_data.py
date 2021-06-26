@@ -11,7 +11,7 @@ import pickle
 import random
 
 import pygame
-from Agents import Agent
+from ImitationLearning.Agents import Agent
 
 SPEED = 100
 
