@@ -6,7 +6,8 @@ On the other hand inverse kinematics involves calculating theta1, theta2 ... the
 
 This project involves using deep learning to fit a neural net on the non-linear inverse kinematics hyper plane using the forward kinematics as our input data. 
  
-![Inverse Kinematics being predicted](images/sample.png)
+![Inverse Kinematics being predicted](images/sample.png "Inverse Kinematics being predicted")
+
 ![Inverse Kinematics being predicted](images/three_link_arm.gif)
 
 
@@ -38,54 +39,28 @@ pip3 install torch torchvision torchaudio
 
 ## Background
 
-Explain how to run the automated tests for this system
+The motion planning environment involves a 3-link robotic arm. The dataset to train and test the model was created using random inputs of joint angles θ1 and θ2. Based on the input joint angles, the end-effector positions were calculated using forward kinematics equations. This data collection was used to validate the model performance. The input to the deep neural network is the position coordinates of the two arm linkages, and the output are the linkage angles θ1 and θ2 to reach the pre-calculated end-effector position. Deep neural network architecture:
 
-### Break down into end to end tests
+![High level overview of neural net](images/nn.png "High level overview of neural net")
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
+## Results
+![Inverse Kinematics being predicted](images/3angle.gif)
 ## Built With
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Gautam Sharma** - *Github* - [gsharma](https://github.com/gautam-sharma1)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+
+
